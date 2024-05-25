@@ -2,6 +2,7 @@ from airflow.decorators import dag, task
 from datetime import datetime
 
 import time
+from helper import module_1
 
 @dag(dag_id='dag_setting_v2',
      start_date=datetime(2021, 10, 26),
