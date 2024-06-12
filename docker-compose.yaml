@@ -35,7 +35,7 @@ services:
     container_name: af_webserver
     command: webserver  
     ports:
-      - '8080:8080'
+      - '80:8080'
 
   airflow-scheduler:
     <<: *airflow-common
@@ -50,7 +50,7 @@ services:
       - db
     container_name: af_init
     command: db migrate  
-    
+
   minio:
     image: quay.io/minio/minio
     container_name: minio
