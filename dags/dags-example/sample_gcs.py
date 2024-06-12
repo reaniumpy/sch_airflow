@@ -1,6 +1,6 @@
 from airflow.decorators import dag, task
 from datetime import datetime
-from helper.util_gcs import GoogleCloudStorage
+from helper_gcp.gcs_util import GoogleCloudStorage
 
 @dag(dag_id='test_gcs',
      start_date=datetime(2021, 10, 26),

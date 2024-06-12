@@ -1,10 +1,10 @@
 from airflow.decorators import dag, task
 from datetime import datetime
 
-from helper_gcs.gcs_extract import Extract
-from helper_gcs.gcs_transform import Transform
-from helper_gcs.gcs_load import Load
-from helper_gcs.gcs_etl_process import ETLProcess
+from helper_gcp.gcs_extract import Extract
+from helper_gcp.gcs_transform import Transform
+from helper_gcp.gcs_load import Load
+from helper_gcp.gcs_etl_process import ETLProcess
 
 
 api_url = 'https://api.tiki.vn/seller-store/v2/collections/116532/products'

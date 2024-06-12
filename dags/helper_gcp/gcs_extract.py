@@ -8,7 +8,7 @@ module_path = os.path.abspath(os.path.join('..'))
 if module_path not in sys.path:
     sys.path.append(module_path + "/my_utils")
 
-from helper_gcs.gcs_util import GoogleCloudStorage
+from helper_gcp.gcs_util import GoogleCloudStorage
 
 class Extract:
     def __init__(self, api_url, params, headers, bucket_name):
